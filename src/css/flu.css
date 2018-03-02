@@ -1,0 +1,235 @@
+    body {
+        background: url("http://www.besthealthmag.ca/wp-content/uploads/2014/01/Doctors.gif") ;
+        color: white;
+        margin-left: 20%;
+        line-height: 20px;
+        font-family: 'Rajdhani', sans-serif;
+        font-family: 'Jura', sans-serif;
+        background-size: cover;
+        background-position: left top 6%;
+        background-attachment: fixed;
+
+    }
+    section {
+            font-family: 'Rajdhani', sans-serif;
+            margin-top: 4em;
+            background: black;
+            width: 75%;
+            margin: 5%;
+            border-radius: 9em;
+            opacity: .9;
+            padding-bottom: 5em;
+
+    }
+
+    button:focus {
+        outline:0;
+    }
+
+    button {
+        margin: 2em;
+    }
+
+    #hideStart {
+        font-family: 'Rajdhani', sans-serif;
+        margin-left: 12em;
+        box-shadow: 10px 11px 10px #565656;
+        background: #201b1b;
+        padding: 1.5em;
+        border-radius: 5px 20px 5px;
+        max-width: 50%;
+    }
+
+    #intro {
+        margin-left: 12%;
+    }
+
+    #intro p {
+        font-family: 'Rajdhani', sans-serif;
+        max-width: 35em;
+        line-height: 1em;
+    }
+
+    #intro h1, h2 {
+        text-align: center;
+        margin-left: -16%;
+        margin-top: 1.5em;
+    }
+
+    .instructions {
+        font-family: 'Rajdhani', sans-serif;
+        color: #9fcded;
+        font-size: 2em;
+    }
+
+    #start {
+        background: #3eac1bb0;
+        padding: 5%;
+        border-radius: 60%;
+        color: white;
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    
+    #welcome {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1em;
+        float: left;
+        margin-left: 12em;
+        margin-top: -11em;
+        line-height: 30px;
+        text-align: center;
+        color: #41d132;
+    }
+
+    #health {
+        font-family: 'Rajdhani', sans-serif;
+        background: #97974f;
+        border-radius: 5px 20px 5px;
+        color: black;
+        font-size: 1em;
+        margin: -8em 0 2em 18em;
+        border: 1px inset #565656;
+    }
+
+    .status {
+        margin-top: 3em;
+        font-size: 2em;
+    }
+
+    .healthReport {
+        font-size: 2em;
+        margin-top: 1em;
+        font-weight: 900;
+        margin-left: .1em;
+    }
+
+    #pCoughScore{
+        padding: 5px;
+        width: 200px;
+        height: 200px;
+        background: #ff0074;
+        border-radius: 5em;
+        margin: 15px;
+        color: white;
+    }
+
+    #count {
+            font-size: 2.5em;
+            margin: .75em 36px;
+        }
+
+    #youGotIt {
+            font-size: 2em;
+            float: right;
+            margin-right: -4em;
+        }
+
+    #scoreText {
+        margin-left: 2em;
+        text-shadow: 1px 1px 10px lightblue;
+        text-align: center;
+    }
+
+    .scoreCardCircle {
+        float: left;
+        width: 200px;
+        height: 200px;
+        border-radius: 5em;
+        border: 5px ridge #92eda98a;
+        margin-left: 45px;
+        margin-top: 17px;
+    }
+
+
+    #playerCurrent, #computerCurrent {
+    margin-left: 10em;
+    background: #00e6ffa3;
+    opacity: .79;
+    margin-top: 1em;    
+    }
+
+    #playerTotal {
+    background: #ffff0080;  
+    color: black;
+    opacity: .79;
+    margin-top: 1em;
+    }
+
+    #playerStatusTotal {
+    background: fuchsia;
+    opacity: .70;
+    margin-top: 1em;
+}
+
+    #computerCurrent {
+    margin-left: 9em;
+    background: #002fffa3;
+    opacity: .79;
+    margin-top: 1em;
+    }
+
+    #computerSeasonTotal {
+    background: #ff540096;
+    color: black;
+    opacity: .79;
+    margin-top: 1em;
+    }
+
+    #computerStatusTotal {
+    background: rgb(238, 15, 71);
+    opacity: .70;
+    margin-top: 1em;
+    }
+
+    #playerCurrentText, #playerTotalText, #computerCurrentText, #computerSeasonText {
+            font-size: 6em;
+            margin-top: .8em;
+            margin-left: 20%;
+    }
+
+
+    #playerCurrentDesc, #playerTotalDesc, #playerStatusDesc {
+        font-size: 30em;
+        float: left;
+        color: #30ff26;
+        margin-top: 3em;
+        text-align: center;
+        text-shadow: 1px 1px #30ff26, 1.5px 1.5px 2px white;
+        line-height: 30px;
+}
+    #computerCurrentDesc , #computerTotalDesc, #computerStatusDesc {
+    font-size: 35px;
+    margin-top: 2.5em;    
+    float: left;
+    color: #002fffa3;
+    margin-top: 3em;
+    text-align: center;
+    margin-left: -0.8em;
+    text-shadow: 1px 1px #00ff0e, 1.5px 1.5px 1px white;
+}
+
+    #computerScoreBox {
+        margin-top: 20em;
+        margin-bottom: 1em;
+    }
+
+    #statusMsg {
+        font-size: 2.5em;
+        float: left;
+        margin-left: 5.5em;
+        margin-top: 2em;
+        color: yellow;
+        text-shadow: 1px 1px white;
+    }
+
+.statusText {
+    font-size: 2.2em;
+    text-shadow: 3px 1px black;
+    margin-top: 1.2em;
+    margin-left: .6em;
+    padding: 5px;
+    color: mediumseagreen;
+    line-height: 36px;
+}
