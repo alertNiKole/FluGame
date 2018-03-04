@@ -69,7 +69,7 @@
         color: white;
         font-size: 1.5em;
         margin-top: 2em;
-        margin-left: 1em;
+        margin-left: 5.5em;
     }
     
     #welcome {
@@ -77,10 +77,11 @@
         font-size: 1em;
         float: left;
         margin-left: 12em;
-        margin-top: -11em;
+        margin-top: -9.5em;
         line-height: 30px;
         text-align: center;
         color: #41d132;
+       text-shadow: 3px 3px 10px #a300ff;
     }
 
     #health {
@@ -91,6 +92,7 @@
         font-size: 1em;
         margin: -8em 0 2em 18em;
         border: 1px inset #565656;
+        font-weight: 900;
     }
 
     .status {
@@ -134,33 +136,33 @@
 
     .scoreCardCircle {
         float: left;
-        width: 200px;
-        height: 200px;
-        border-radius: 5em;
+        width: 260px;
+        height: 260px;
+        border-radius: 10em;
         border: 5px ridge #92eda98a;
         margin-left: 45px;
-        margin-top: 17px;
+        margin-top: 50px;
     }
 
 
     #playerCurrent, #computerCurrent {
-    margin-left: 10em;
+    margin-left: 5em;
     background: #00e6ffa3;
     opacity: .79;
-    margin-top: 1em;    
+    margin-top: 2.5em; 
     }
 
     #playerTotal {
     background: #ffff0080;  
     color: black;
     opacity: .79;
-    margin-top: 1em;
+    margin-top: 2.5em;
     }
 
     #playerStatusTotal {
     background: fuchsia;
     opacity: .70;
-    margin-top: 1em;
+    margin-top: 2.5em;
 }
 
     #computerCurrent {
@@ -184,9 +186,9 @@
     }
 
     #playerCurrentText, #playerTotalText, #computerCurrentText, #computerSeasonText {
-            font-size: 6em;
-            margin-top: .8em;
-            margin-left: 20%;
+        font-size: 6em;
+        margin-top: .96em;
+        margin-left: 25%;
     }
 
 
@@ -218,18 +220,35 @@
     #statusMsg {
         font-size: 2.5em;
         float: left;
-        margin-left: 5.5em;
+        margin-left: 2.5em;
         margin-top: 2em;
         color: yellow;
-        text-shadow: 1px 1px white;
+        /* text-shadow: 1px 1px white; */
+        line-height: 60px;
+        text-align: center;
     }
 
 .statusText {
-    font-size: 2.2em;
+    font-size: 3.2em;
     text-shadow: 3px 1px black;
     margin-top: 1.2em;
-    margin-left: .6em;
+    /* margin-left: 1em; */
     padding: 5px;
+    text-align: center;
     color: mediumseagreen;
-    line-height: 36px;
+    line-height: 52px;
+}
+
+
+/* in progress heartbeat  animation */
+.heart {
+	font-size: 150px;
+	color: #e00;
+	animation: beat 3s infinite alternate;
+	transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
 }
