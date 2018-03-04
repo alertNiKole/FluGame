@@ -18,7 +18,7 @@ Your mission is to make it to the end of Flu Season without catching the flu.
 
 The backend logic tallys your score in comparison with the magically generated number of flu days in the season [rng(100)];
 
-## BASIC LOGIC
+### BASIC LOGIC
 
 Your current score is tallied each time you press the "Check Up" button
 
