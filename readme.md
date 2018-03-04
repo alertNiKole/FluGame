@@ -10,6 +10,8 @@ I will likely use this method more going forward.  Now that I'm in this project 
 
 Click Start to begin your daily health check during flu season.
 
+!["Catching the Flu Browser Game"](https://i.imgur.com/5DLoOEk.png)
+
 ### YOUR GOAL
 
 Your mission is to make it to the end of Flu Season without catching the flu.
