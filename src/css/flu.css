@@ -3,23 +3,22 @@
         color: white;
         margin-left: 20%;
         line-height: 20px;
-        font-family: 'Rajdhani', sans-serif;
-        font-family: 'Jura', sans-serif;
+       font-family: 'Jura', sans-serif;
         background-size: cover;
         background-position: left top 6%;
         background-attachment: fixed;
 
     }
+
     section {
-            font-family: 'Rajdhani', sans-serif;
             margin-top: 4em;
             background: black;
             width: 75%;
             margin: 5%;
-            border-radius: 9em;
+            border-radius: 5em;
             opacity: .9;
             padding-bottom: 5em;
-
+            border: 5px ridge #565656;
     }
 
     button:focus {
@@ -31,7 +30,7 @@
     }
 
     #hideStart {
-        font-family: 'Rajdhani', sans-serif;
+       font-family: 'Jura', sans-serif;
         margin-left: 12em;
         box-shadow: 10px 11px 10px #565656;
         background: #201b1b;
@@ -40,27 +39,12 @@
         max-width: 50%;
     }
 
-    #intro {
-        margin-left: 12%;
-    }
+ #intro {
+     margin: 3em;
+     font-family: 'Jura', sans-serif;
+     line-height: 15px; 
 
-    #intro p {
-        font-family: 'Rajdhani', sans-serif;
-        max-width: 35em;
-        line-height: 1em;
-    }
-
-    #intro h1, h2 {
-        text-align: center;
-        margin-left: -16%;
-        margin-top: 1.5em;
-    }
-
-    .instructions {
-        font-family: 'Rajdhani', sans-serif;
-        color: #9fcded;
-        font-size: 2em;
-    }
+ }
 
     #start {
         background: #3eac1bb0;
@@ -73,19 +57,19 @@
     }
     
     #welcome {
-        font-family: 'Rajdhani', sans-serif;
+       font-family: 'Jura', sans-serif;
         font-size: 1em;
         float: left;
         margin-left: 12em;
         margin-top: -9.5em;
         line-height: 30px;
         text-align: center;
-        color: #41d132;
+        color: #f4ef0c;
        text-shadow: 3px 3px 10px #a300ff;
     }
 
     #health {
-        font-family: 'Rajdhani', sans-serif;
+       font-family: 'Jura', sans-serif;
         background: #97974f;
         border-radius: 5px 20px 5px;
         color: black;
@@ -188,18 +172,19 @@
     #playerCurrentText, #playerTotalText, #computerCurrentText, #computerSeasonText {
         font-size: 6em;
         margin-top: .96em;
-        margin-left: 25%;
+        margin-left: 20%;
     }
 
 
     #playerCurrentDesc, #playerTotalDesc, #playerStatusDesc {
-        font-size: 30em;
+        font-size: 1.7em;
         float: left;
-        color: #30ff26;
-        margin-top: 3em;
+        color: #97974f;
         text-align: center;
         text-shadow: 1px 1px #30ff26, 1.5px 1.5px 2px white;
         line-height: 30px;
+        margin-left: .7em;
+        margin-top: 4.7em;
 }
     #computerCurrentDesc , #computerTotalDesc, #computerStatusDesc {
     font-size: 35px;
@@ -217,19 +202,19 @@
         margin-bottom: 1em;
     }
 
-    #statusMsg {
-        font-size: 2.5em;
-        float: left;
-        margin-left: 2.5em;
-        margin-top: 2em;
-        color: yellow;
+    #statusMsg {        
         /* text-shadow: 1px 1px white; */
         line-height: 60px;
         text-align: center;
+        font-size: 2em;
+        float: left;
+        margin-left: 2.5em;
+        margin-top: 3.5em;
+        color: yellow;
     }
 
 .statusText {
-    font-size: 3.2em;
+    font-size: 3em;
     text-shadow: 3px 1px black;
     margin-top: 1.2em;
     /* margin-left: 1em; */
@@ -251,4 +236,12 @@
 /* Heart beat animation */
 @keyframes beat{
 	to { transform: scale(1.4); }
+}
+
+.red {
+    color: red;
+}
+
+#logo {
+    background-image: url("/src/images/logo.png");
 }

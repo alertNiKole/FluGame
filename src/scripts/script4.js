@@ -106,7 +106,7 @@ if (dayCount >= daysInFluSeason && parsedTotal<= fluBug) {
     }else if (fluBug == 0 || parseInt(current.innerHTML) === 0) {
             console.log("You've Been Granted Immunity for the season");
             statusMsg.hidden = false;
-            statusMsg.innerHTML = "You've Been Granted Immunity for the season";
+            statusMsg.innerHTML = "You've Been Granted Immunity for the season!";
             statusText.style.marginTop = "1.2em"; 
             statusText.innerHTML = "YOU\'RE IMMUNE!";  
             console.log("You're IMMUNE");

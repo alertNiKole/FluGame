@@ -1,117 +1,88 @@
     <!Doctype html>
     <html lang="en-US">
 
-    <head>
-        <title>nvy.io | Catching the Flu Game</title>
-        <!-- <<change title>> -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A fun game, using functional javascript.  Developed to be nvy'd.  A project created by NiKole Maxwell for nvy.io">
-        <!-- <<change attributte>> -->
-        <meta name="keywords" content="web development, business process, documentation, api reporting, forms, workflow, end to end process development, start ups, small business, woman owned business,.Vienna VA">
-        <!-- <<change attributte>> -->
-        <meta name="robots" content="index,follow">
-        <!-- <<change attributte>> -->
-        <meta name="author" content="NiKole Maxwell">
-        <!-- <<change attributte>> -->
-        <!--Normalize CSS-->
-        <link href="src/css/normalize.css"type="text/css"  rel="stylesheet">
-        <!-- import font awesome -->
-
-   <!--
-        <link href="https://fonts.googleapis.com/css?family=Arsenal|Advent+Pro|Questrial" 
-        rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=Jura|Khand|Rajdhani" rel="stylesheet">
-        <script src="https://use.fontawesome.com/790469ea08.js">
-        </script>
-        <!-- Custom CSS -->
-        <link href="src/css/typography.css " type="text/css" rel="stylesheet">
-        <link href="src/css/flu.css" type="text/css" rel="stylesheet">
-    </head>
-
-<body class="arsenal">
-<section>
-<div id="intro">
-<h1> Catching the Flu </h1>
-<h2> Will you make it without catching the flu???   </h2 >
-<h3 class="instructions bold">Instructions</h3>
-<p>Its you vs the computer - will you make it to the end of Flu Season without catching the flu? Keep track of your coughs each day and hope that you don't cough enough to catch the magic Flu Bug. If you make it to the end of the season healthy - you're a winner! </p>
-</div>
-
-<div id="hideStart">
-<button id="start">  Start Here    </button>
-<p id="welcome"></p>
-</div>
-
-<div>
-<div id="gameplay" hidden="false">
-<button id="health">  How many times have you coughed today? <br> <strong class="accent t-shadow"> >>>  Click to check your health <<<</strong></button>
-<div id="scoreBox">
-<div id="playerScoreBox">
-    <hr>
-<h2 class="healthReport">  Your Health Report </h2>
-    <hr>
-
-    <div id="playerCurrent" class="scoreCardCircle">
-        <div id="playerCurrentText"> 00</div>
-        <div id="playerCurrentDesc"> # of Coughs</div>
+        <head>
+            <title>nvy.io | Catching the Flu Game</title>
+            <!-- <<change title>> -->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="A fun game, using functional javascript.  Developed to be nvy'd.  A project created by NiKole Maxwell for nvy.io">
+            <!-- <<change attributte>> -->
+            <meta name="keywords" content="web development, business process, documentation, api reporting, forms, workflow, end to end process development, start ups, small business, woman owned business,.Vienna VA">
+            <!-- <<change attributte>> -->
+            <meta name="robots" content="index,follow">
+            <!-- <<change attributte>> -->
+            <meta name="author" content="NiKole Maxwell">
+            <!-- <<change attributte>> -->
+            <!--Normalize CSS-->
+            <link href="src/css/normalize.css"type="text/css"  rel="stylesheet">
+            <!-- import font awesome -->
+    
+       <!--
+            <link href="https://fonts.googleapis.com/css?family=Arsenal|Advent+Pro|Questrial" 
+            rel="stylesheet"> -->
+            <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    
+            <!-- Custom CSS -->
+            <link href="src/css/typography.css " type="text/css" rel="stylesheet">
+            <link href="src/css/flu.css" type="text/css" rel="stylesheet">
+        </head>
+    
+    <body>
+    <section>
+        <div id="logo"></div>
+    <div id="intro">
+        <h1  class="subBlue emphasis"> Catching the Flu </h1>
+        <h2> Will you make it without catching the flu???   </h2 ><br>
+        <h3 class="subBlue emphasis bold">Instructions:</h3>
+    <span>
+        <p>Its you vs the FluBug - will you make it to the end of flu season without catching the flu? Keep track of your coughs each day by clicking the button. If your # of coughs match the Magic Flu Bug - you catch it and <strong class="red">LOSE!</strong></p>
+       <p>If you make it through to the end of the season healthy - you're a winner! </p>
+    <p><strong class="red">Bonus:  </strong> Gain Immunity by coughing no times in a day and you're safe until next season!</p>
+    </span>
     </div>
-
-    <div id="playerTotal" class="scoreCardCircle">
-            <div id="playerTotalText"> 00</div>
-            <div id="playerTotalDesc"> Season Total </div>
+    
+    <div id="hideStart">
+    <button id="start">  Start Here    </button>
+    <p id="welcome"></p>
     </div>
-
-    <div id="playerStatus" class="scoreCardCircle">
-            <div id="playerStatusText" class="statusText"> Status Pending
-                <div id="playerStatusDesc"> Are you Sick?</div>
-            </div>
-    </div>
-
-
-<div id="statusMsg" hidden>Oh no! You've caught the flu! <br> The game has ended, please get to the Doctor.</div>
-</div>
-
-<!-- Computer Score -->
-<!--
-<div id="computerScoreBox">
-    <hr>
-        <h2 class="healthReport">  Computer Health Report </h2>
-            <hr>
-            <div id="computerCurrent" class="scoreCardCircle">
-                <div id="computerCurrentText">00
-                    <div id="computerCurrentDesc"># of Coughs</div>
-                </div>
-            </div>
-            <div id="computerSeasonTotal" class="scoreCardCircle">
-                    <div id="computerSeasonText">00
-                        <div id="computerSeasonDesc">Season Total </div>
-                    </div>
-                </div>
-                <div id="computerStatus" class="scoreCardCircle">
-                    <div id="computerStatusText" class="statusText"> Status Pending
-                    <div id="computerStatusDesc"> Are you Sick?</div>
-                    </div>
+    
+    <div>
+    <div id="gameplay" hidden="false">
+    <button id="health">  How many times have you coughed today? <br> <strong class="beat accent t-shadow"> >>>  Click to check your health <<<</strong></button>
+    <div id="scoreBox">
+    <div id="playerScoreBox">
+        <hr>
+    <h2 class="healthReport">  Your Health Report </h2>
+        <hr>
+    
+        <div id="playerCurrent" class="scoreCardCircle">
+            <div id="playerCurrentText"> 00</div>
+            <div id="playerCurrentDesc" class="accent"> # of Coughs</div>
+        </div>
+    
+        <div id="playerTotal" class="scoreCardCircle">
+                <div id="playerTotalText"> 00</div>
+                <div id="playerTotalDesc"class="accent"> Season Total </div>
+        </div>
+    
+        <div id="playerStatus" class="scoreCardCircle">
+                <div id="playerStatusText" class="statusText"> Status Pending
+                    <div id="playerStatusDesc"> Are you Sick?</div>
                 </div>
         </div>
-
-<div id="computerBox">
-    <div id="cCoughScore">
-    </div>
-</div>
-</div>
-<button id="score"> Check Score</button>
-<p id="scoreText"></p>
-</div><
-    -->
-</section>
-
-<!-- import custom css -->
-<!-- <script src="src/scripts/script.js"></script> *-->
-<!-- <script src="src/scripts/scriptRedo2.js"></script> -->
-<script src="src/scripts/script4.js"></script>
- <!-- redo logic -->
     
-</body>
+    
+    <div id="statusMsg" hidden>Oh no! You've caught the flu! <br> The game has ended, please get to the Doctor.</div>
+    </div>
+    
+    </section>
+    
+    <!-- import custom css -->
+    
+    <script src="src/scripts/script4.js"></script>
+     <!-- redo logic -->
+      </body>
+    
 </html>
