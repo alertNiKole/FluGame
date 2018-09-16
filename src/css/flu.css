@@ -243,5 +243,5 @@
 }
 
 #logo {
-    background-image: url("/src/images/logo.png");
+    background-image: url("../images/logo.png");
 }
